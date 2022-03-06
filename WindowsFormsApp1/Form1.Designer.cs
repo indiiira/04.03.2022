@@ -125,6 +125,7 @@ namespace WindowsFormsApp1
             this.Fam.Name = "Fam";
             this.Fam.Size = new System.Drawing.Size(256, 20);
             this.Fam.TabIndex = 3;
+            this.Fam.TextChanged += new System.EventHandler(this.Fam_TextChanged);
             // 
             // label3
             // 
@@ -236,7 +237,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.Tab1);
             this.Controls.Add(this.referense);
             this.Controls.Add(this.label4);
-          
+            this.Name = "Form1";
             this.Text = "Form1";
             this.Tab1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -257,9 +258,6 @@ namespace WindowsFormsApp1
         public System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox box;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox Groups;
-        private System.Windows.Forms.TextBox Name;
-        private System.Windows.Forms.TextBox Fam;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -268,6 +266,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage tabPage3;
         public System.Windows.Forms.DataGridView Info;
+        public System.Windows.Forms.TextBox Groups;
+        public System.Windows.Forms.TextBox Name;
+        public System.Windows.Forms.TextBox Fam;
     }
 }
 

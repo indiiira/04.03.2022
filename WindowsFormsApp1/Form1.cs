@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             Info.DataSource = ds.Tables[0];
         }
 
-        public Form1()
+        public  Form1()
         {
             InitializeComponent();
 
@@ -192,6 +192,11 @@ namespace WindowsFormsApp1
             
             //привязываем dataGridView к таблице
             Info.DataSource = ds.Tables[0];
+        }
+
+        private void Fam_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
